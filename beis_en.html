@@ -2,6 +2,24 @@
 <html>
 <head>
     <head>
+        /* Make ALL images fit the screen */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent horizontal scrolling on the whole page */
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Make everything stay within screen */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
   <meta property="og:title" content="Bobeis">
   <meta property="og:description" content="A site that shows pictures of dogs and their description">
   <meta property="og:url" content="https://bobeis.org">
