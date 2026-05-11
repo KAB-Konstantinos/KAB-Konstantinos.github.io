@@ -10,34 +10,19 @@
   <meta charset="UTF-8">
     <title>Bobeis</title>
     <style>
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
 
-    img, video, iframe {
-        max-width: 100%;
-        height: auto;
-    }
+body {
+    overflow-x: hidden;
+}
 
-    body {
-        overflow-x: hidden;
-    }
-
-    /* REMOVE THIS WHOLE BLOCK ↓↓↓ */
-    /* * {
-        max-width: 100%;
-        box-sizing: border-box;
-    } */
-    
-    /* INSTEAD, add a container for desktop */
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-        padding: 20px;
-    }
-    
-    /* Keep box-sizing only */
-    * {
-        box-sizing: border-box;
-    }
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
         body {
          background: linear-gradient(80deg, #d4a373 15%, #e9c46a 100%);
