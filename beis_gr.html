@@ -20,9 +20,31 @@ body {
 }
 
 * {
-    max-width: 100%;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+/* FORCE images to be a reasonable size on desktop */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Specifically for desktop screens - THIS IS THE FIX */
+@media (min-width: 1024px) {
+    img {
+        max-width: 600px;     /* Images won't get bigger than 600px on desktop */
+        width: 100%;
+    }
+}
+
 
         body {
             font-family: Arial, sans-serif;
